@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Fix for Vercel build timeout
+  experimental: {
+     turbopack: false,
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
